@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ARTNEST/static/css/main.0423351d.css",
+    "main.js": "/ARTNEST/static/js/main.588743b7.js",
+    "static/js/703.29cabca7.chunk.js": "/ARTNEST/static/js/703.29cabca7.chunk.js",
+    "static/js/513.38159ab7.chunk.js": "/ARTNEST/static/js/513.38159ab7.chunk.js",
+    "static/media/54950.jpg": "/ARTNEST/static/media/54950.96ab21feca205990d78e.jpg",
+    "static/media/Jan-Business_team_4.jpg": "/ARTNEST/static/media/Jan-Business_team_4.01c1a7c19e2036f4819a.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/ARTNEST/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/4529196.jpg": "/ARTNEST/static/media/4529196.1b76b3ccd6e7002af425.jpg",
+    "static/media/fontawesome-webfont.eot": "/ARTNEST/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/ARTNEST/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/arttt.jpg": "/ARTNEST/static/media/arttt.201dde6ff3cf3f058a27.jpg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/ARTNEST/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ARTNEST/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/createart.jpg": "/ARTNEST/static/media/createart.57e16937f46eee9bad8d.jpg",
+    "static/media/connect.jpg": "/ARTNEST/static/media/connect.ea10bdaf75dba501c1ef.jpg",
+    "index.html": "/ARTNEST/index.html",
+    "main.0423351d.css.map": "/ARTNEST/static/css/main.0423351d.css.map",
+    "main.588743b7.js.map": "/ARTNEST/static/js/main.588743b7.js.map",
+    "703.29cabca7.chunk.js.map": "/ARTNEST/static/js/703.29cabca7.chunk.js.map",
+    "513.38159ab7.chunk.js.map": "/ARTNEST/static/js/513.38159ab7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0423351d.css",
+    "static/js/main.588743b7.js"
+  ]
+}
