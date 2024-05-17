@@ -1,0 +1,49 @@
+/* Footer.css */
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* To make it responsive */
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px; /* You can adjust based on your design */
+}
+
+.footer-link, .footer-icon-link {
+  margin: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-icon {
+  display: flex; /* Set this to flex to have icons in a row */
+    justify-content: space-between; /* This will spread the icons evenly across available space */
+    align-items: center;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-section {
+      text-align: center;
+  }
+}

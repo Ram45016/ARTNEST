@@ -1,0 +1,86 @@
+/* AssetsPage.css */
+
+.productCardContainer {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust to your liking */
+  }
+  
+  .productCard {
+    width: calc(33.33% - 1rem); /* To have three cards in a row with some margin between */
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden; /* Hide overflowing content within the card */
+  }
+  
+  .productCard:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .productImage {
+    height: 20rem;
+    overflow: hidden;
+  }
+  
+  .productImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; /* Center the image within the container */
+    transition: transform 0.3s; /* Add transition for image zoom on hover */
+  }
+  
+  .productCard:hover .productImage img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  
+  .textPart {
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s;
+    transform: translateY(0);
+  }
+  
+  .productCard:hover .textPart {
+    transform: translateY(-10%);
+  }
+  
+  .productBrand {
+    font-weight: bold;
+    opacity: 0.6;
+  }
+  
+  .productTitle {
+    margin-top: 0.25rem;
+  }
+  
+  .priceInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  .discountedPrice {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .originalPrice {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .discountPercentage {
+    color: green;
+    font-weight: bold;
+  }
+  

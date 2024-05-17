@@ -1,0 +1,40 @@
+/* Add this CSS to your component's stylesheet */
+.user-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .user-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-list table th,
+  .user-list table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-list table th {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .user-list table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add responsive styles if needed */
+  
+  @media (max-width: 768px) {
+    .user-list table {
+      font-size: 14px;
+    }
+  }
+  

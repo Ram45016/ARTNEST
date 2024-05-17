@@ -1,0 +1,66 @@
+/* UserContainer.css */
+
+/* Basic setup for the container */
+.userContainerStyles {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: blue;
+  transition: background-color 0.3s;
+}
+
+.userContainerStyles:hover {
+  background-color: rgba(34, 152, 255, 0.849); /* subtle hover effect */
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 24px; /* adjust according to your design preference */
+}
+
+/* Dropdown styles */
+.userDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10; 
+  min-width: 100px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden; /* to respect border-radius on child elements */
+}
+
+.userDropdown button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  display: block; /* makes the button take the full width */
+  width: 100%; 
+  text-align: left; 
+  transition: background-color 0.2s;
+}
+
+.userDropdown button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .userContainerStyles {
+    padding: 4px 8px; /* reduced padding for smaller screens */
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .userDropdown {
+    min-width: 80px; /* reduced width for dropdown */
+  }
+}

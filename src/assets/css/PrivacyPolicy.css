@@ -1,0 +1,37 @@
+/* PrivacyPolicy Styles */
+
+.privacy-policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .privacy-policy-container h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy-content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .privacy-policy-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .privacy-policy-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Add more styles for different sections of your privacy policy as needed */
+  

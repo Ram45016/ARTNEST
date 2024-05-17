@@ -1,0 +1,73 @@
+/* ProjectView.css */
+.project-view {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #000000; /* Black border for the table */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #000000; /* Black border for table rows */
+  border-right: 1px solid #000000;  /* Black border on the right side of table cells */
+}
+
+th {
+  background-color: #c2b9b9;
+  border-top: 1px solid #000000; /* Black border at the top of table headers */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Removes the bottom border for the last row to avoid double borders */
+}
+
+td:last-child, th:last-child {
+  border-right: none; /* Removes the right border for the last cell to avoid double borders */
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.project-column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.project-column h3 {
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.project-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-column ul li {
+  margin-bottom: 8px;
+}

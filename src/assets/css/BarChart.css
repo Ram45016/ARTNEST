@@ -1,0 +1,9 @@
+.header-title, .header-graph {
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header-title h2, .header-graph h2 {
+    color: white;
+}

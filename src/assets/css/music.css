@@ -1,0 +1,80 @@
+.music-container {
+    padding: 20px;
+    background-color: #2c2f33;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #7289da;
+    padding-bottom: 10px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.volume-label {
+    margin-right: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.note-button {
+    padding: 10px 20px;
+    background-color: #7289da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.note-button:hover {
+    background-color: #5865f2;
+}
+
+.recording-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.recording-button, .download-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.recording-button.start {
+    background-color: #43b581;
+}
+
+.recording-button.stop {
+    background-color: #f04747;
+}
+
+.download-button {
+    background-color: #5865f2;
+}
+
+.player {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

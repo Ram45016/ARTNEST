@@ -1,0 +1,76 @@
+/* assets/css/ProjectList.css */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.project {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    margin: 0 0 15px;
+    color: #666;
+}
+
+.project-type, .project-privacy {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #007BFF;
+}
+
+.team-members, .project-goals {
+    margin: 20px 0;
+}
+
+.member-list, .goal-list {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.member-list li, .goal-list li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-list {
+        gap: 10px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+}

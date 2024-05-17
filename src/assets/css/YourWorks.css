@@ -1,0 +1,145 @@
+/* YourWorks.css */
+
+.your-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title-yourWorks {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .your-works h1
+  {
+      text-align: center;
+  }
+  
+  .activities {
+    margin-bottom: 40px;
+  }
+  
+  .activities h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .activities li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .activities li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timestamp {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .works h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .artwork {
+    width: 300px;    /* Set the desired width */
+    height: 350px;   /* Set the desired height including the space for title text below the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;   /* Hide any overflowing content */
+    border: 1px solid #e0e0e0;   /* Optional: Add border for better visibility of cards */
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .artwork img {
+    /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio while covering the fixed height */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    width: 250px;    /* Fixed width */
+    height: 250px;   /* Fixed height */
+    object-fit: cover;  /* This will make sure images cover the container without distorting the aspect ratio */
+    object-position: center;  /* Center the images */
+  }
+  
+  .artwork:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artwork p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }  
+
+  .artwork {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .artwork:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artwork-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .artwork:hover .artwork-details {
+    display: block;
+    opacity: 1;
+  }

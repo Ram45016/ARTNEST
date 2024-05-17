@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;  /* Using Arial as an example; use any preferred font */
+}
+.loginAndSignUpPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg,#72949cab,#183574e1);
+}
+
+.forms-container {
+  perspective: 1000px;
+  width: 350px; 
+  height: 500px;
+  position: relative;
+  user-select: none;
+}
+
+.form-box {
+  position: absolute;
+  top: 0;
+  left:100%;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  transition: transform 0.6s; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,#183574, #ffffff2f);
+  box-shadow: 0px 10px 30px rgba(102, 94, 94, 0.1);
+  border-radius: 10px;
+  
+}
+
+.form-box.login {
+  transform: rotateY(0deg); 
+}
+
+.form-box.signup {
+  transform: rotateY(180deg); 
+  
+}
+
+.forms-container.flipped .login {
+  transform: rotateY(-180deg); 
+}
+
+.forms-container.flipped .signup {
+  transform: rotateY(0deg); 
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px -10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 15px 100px;
+  justify-content: center;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+.user-icon{
+  color: #ddd;
+  font-size: 100px;
+}
+
+href {
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+href:hover {
+  text-decoration: none;
+}
+
+.linkText{
+  text-decoration: none;
+  color: black;
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin: 0px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .forms-container {
+    width: 100%; /* Adjust the width for small screens */
+  }
+
+  .form-box {
+    width: 100%; /* Adjust the width for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginAndSignUpPage {
+    justify-content: flex-start; /* Align content to the top on small screens */
+    padding: 20px; /* Add some padding to the container */
+  }
+
+  .form-box {
+    margin: 20px 0; /* Add space between the form and the image on small screens */
+  }
+}
